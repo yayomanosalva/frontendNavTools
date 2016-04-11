@@ -64,8 +64,9 @@ To get started, check out the repository, inspect the code,
   $> touch src/index.html src/scripts/app.js  src/styles/main.css
   $> open src/index.html
   $> touch gulpfile.js
-  $> gulp hello
   $> npm install --save-dev browser-sync gulp-uglify gulp-minify gulp-html-replace gulp-sourcemaps
+  $> gulp content
+  $> gulp <<< el nombre de la tarea >>> y enter en la consola
   ```
 1. Edit package.json
 
@@ -97,53 +98,53 @@ To get started, check out the repository, inspect the code,
 
   ```bash
   var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
-var reload = browserSync.reload;
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
-var minifyCSS = require('gulp-minify-css');
-var replace =  require('gulp-html-replace');
-var sourcemaps = require('gulp-sourcemaps');
-var modernizr = require('gulp-modernizr');
-
-gulp.task('content', function(){
-  gulp.src('./src/index.html')
-      .pipe(gulp.dest('./dist/'))
+  var browserSync = require('browser-sync').create();
+  var reload = browserSync.reload;
+  var uglify = require('gulp-uglify');
+  var concat = require('gulp-concat');
+  var minifyCSS = require('gulp-minify-css');
+  var replace =  require('gulp-html-replace');
+  var sourcemaps = require('gulp-sourcemaps');
+  var modernizr = require('gulp-modernizr');
+  
+  gulp.task('content', function(){
+    gulp.src('./src/index.html')
+        .pipe(gulp.dest('./src/'))
+        .pipe(reload({stream: true}))
+  });
+  
+  gulp.task('scripts', function(){
+    gulp.src('src/scripts/*.js')
+      .pipe(sourcemaps.init())
+        .pipe(uglify())
+        .pipe(concat('app.js'))
+      .pipe(sourcemaps.write())
+      .pipe(gulp.dest('./src/scripts/min'))
       .pipe(reload({stream: true}))
-});
-
-gulp.task('script', function(){
-  gulp.src('./src/srcipts/*.js')
-    .pipe(sourcemaps.init())
+  });
+  
+  gulp.task('styles', function(){
+    return gulp.src('./src/styles/*.js')
       .pipe(uglify())
-      .pipe(concat('app.js'))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./dist/scripts'))
-    .pipe(reload({stream: true}))
-});
-
-gulp.task('styles', function(){
-  return gulp.src('./src/styles/*.js')
-    .pipe(uglify())
-      .pipe(gulp.dest('./dist/styles'))
-});
-
-gulp.task('modernizr', function() {
-  gulp.src('./src/srcipts/*.js')
-    .pipe(modernizr())
-    .pipe(gulp.dest("build/"))
-});
-
-gulp.task('serve', function() {
-    browserSync.init({
-        server: {
-            baseDir: "./src/"
-        }
-    });
-    gulp.watch('./src/index.html', ['content']);
-    gulp.watch('./src/scripts/*.js', ['scripts']);
-    gulp.watch('./src/styles', ['styles']);
-});
+        .pipe(gulp.dest('./src/styles/min'))
+  });
+  
+  gulp.task('modernizr', function() {
+    gulp.src('./src/scripts/*.js')
+      .pipe(modernizr())
+      .pipe(gulp.dest("build/"))
+  });
+  
+  gulp.task('serve', function() {
+      browserSync.init({
+          server: {
+              baseDir: "./src/"
+          }
+      });
+      gulp.watch('./src/index.html', ['content']);
+      gulp.watch('./src/scripts/*.js', ['scripts']);
+      gulp.watch('./src/styles/*.css', ['styles']);
+  });
   ```
 
 1. To inspect the site on your phone, you can run a local server
