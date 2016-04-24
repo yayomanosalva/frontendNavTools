@@ -94,9 +94,13 @@ To get started, check out the repository, inspect the code,
     },
     "devDependencies": {
       "axios": "^0.8.1",
-      "browser-sync": "^2.11.1",
-      "gulp": "^3.9.0",
-      "gulp-uglify": "^1.5.1"
+    "browser-sync": "^2.12.3",
+    "gulp": "^3.9.0",
+    "gulp-html-replace": "^1.5.5",
+    "gulp-jasmine": "^2.3.0",
+    "gulp-minify": "0.0.10",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3"
     }
   }
   ```
