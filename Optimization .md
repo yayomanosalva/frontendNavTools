@@ -118,9 +118,9 @@ To get started, check out the repository, inspect the code,
   var sourcemaps = require('gulp-sourcemaps');
   var modernizr = require('gulp-modernizr');
   const jasmine = require('gulp-jasmine');
-
+  
   gulp.task('default', () =>
-    gulp.src('jasmine/spec/test.js')
+    gulp.src('./src/jasmine/spec/test.js')
       // gulp-jasmine works on filepaths so you can't have any plugins before it 
       .pipe(jasmine())
   );
@@ -131,24 +131,24 @@ To get started, check out the repository, inspect the code,
         .pipe(reload({stream: true}))
   });
   
-  gulp.task('scripts', function(){
-    gulp.src('src/scripts/*.js')
+  gulp.task('js', function(){
+    gulp.src('src/js/*.js')
       .pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(concat('app.js'))
       .pipe(sourcemaps.write())
-      .pipe(gulp.dest('./src/scripts/min'))
+      .pipe(gulp.dest('./src/js/min'))
       .pipe(reload({stream: true}))
   });
   
-  gulp.task('styles', function(){
-    return gulp.src('./src/styles/*.js')
+  gulp.task('css', function(){
+    return gulp.src('./src/css/*.js')
       .pipe(uglify())
-        .pipe(gulp.dest('./src/styles/min'))
+        .pipe(gulp.dest('./src/css/min'))
   });
   
   gulp.task('modernizr', function() {
-    gulp.src('./src/scripts/*.js')
+    gulp.src('./src/js/*.js')
       .pipe(modernizr())
       .pipe(gulp.dest("build/"))
   });
@@ -160,9 +160,9 @@ To get started, check out the repository, inspect the code,
           }
       });
       gulp.watch('./src/index.html', ['content']);
-      gulp.watch('./src/scripts/*.js', ['scripts']);
-      gulp.watch('./src/styles/*.css', ['styles']);
-      gulp.watch('./src/jasmine/spec/*.js', ['jasmine']);
+      gulp.watch('./src/js/*.js', ['js']);
+      gulp.watch('./src/css/*.css', ['css']);
+      gulp.watch('./src/jasmine/spec/*.js', ['js']);
   });
   ```
 
