@@ -66,6 +66,7 @@ To get started, check out the repository, inspect the code,
   $> touch gulpfile.js
   $> npm install --save-dev browser-sync gulp-uglify gulp-minify gulp-html-replace gulp-sourcemaps
   $> gulp content
+  $> npm install -g gulpfile-install
   $> gulpfile-install
   $> gulp <<< el nombre de la tarea >>> y enter en la consola
   
