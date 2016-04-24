@@ -66,7 +66,13 @@ To get started, check out the repository, inspect the code,
   $> touch gulpfile.js
   $> npm install --save-dev browser-sync gulp-uglify gulp-minify gulp-html-replace gulp-sourcemaps
   $> gulp content
+  $> gulpfile-install
   $> gulp <<< el nombre de la tarea >>> y enter en la consola
+  
+  // Tambien si trabajamos con css y js
+  $> mkdir src
+  $> mkdir src/js src/css
+  $> touch src/index.html src/js/app.js  src/css/main.css
   ```
 1. Edit package.json
 
@@ -106,6 +112,13 @@ To get started, check out the repository, inspect the code,
   var replace =  require('gulp-html-replace');
   var sourcemaps = require('gulp-sourcemaps');
   var modernizr = require('gulp-modernizr');
+  const jasmine = require('gulp-jasmine');
+
+  gulp.task('default', () =>
+    gulp.src('jasmine/spec/test.js')
+      // gulp-jasmine works on filepaths so you can't have any plugins before it 
+      .pipe(jasmine())
+  );
   
   gulp.task('content', function(){
     gulp.src('./src/index.html')
@@ -144,6 +157,7 @@ To get started, check out the repository, inspect the code,
       gulp.watch('./src/index.html', ['content']);
       gulp.watch('./src/scripts/*.js', ['scripts']);
       gulp.watch('./src/styles/*.css', ['styles']);
+      gulp.watch('./src/jasmine/spec/*.js', ['jasmine']);
   });
   ```
 
