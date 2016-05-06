@@ -16,7 +16,7 @@
   -->> git config --global alias.st status              --->>> puedes cambiar el comando por un alias
   ```
 
-  ## Glosario
+ ## Glosario
 
    ```bash
   1. git init                                           --->>> Creamos un repositorio en el directorio actual
@@ -85,11 +85,14 @@
 
 ```bash 
 > git add                           --->>> updates all your changes - asi allas eliminado una carpeta, actualia el repositorio.
-****** .subir al repositorio bitbucker *******
-despues de git push origin <branch>, te cambias de rama a dev con -> git checkout <branch>
+```
+
+## subir al repositorio bitbucker
+
+```bash
+  despues de git push origin <branch>, te cambias de rama a dev con -> git checkout <branch>
 y haces git pull. y si quieres borrar la rama arriba.
 
 > git stash pop                                       --->>> vuelve al estado anterior
 > git stash                                           --->>> continuar sin cambios
-> 
 ```
