@@ -16,7 +16,7 @@
   -->> git config --global alias.st status              --->>> puedes cambiar el comando por un alias
   ```
 
- ## Glosario
+## Glosario
 
    ```bash
   1. git init                                           --->>> Creamos un repositorio en el directorio actual
@@ -84,7 +84,7 @@
 ## deleted
 
 ```bash 
-> git add                           --->>> updates all your changes - asi allas eliminado una carpeta, actualia el repositorio.
+> git add             --->>> updates all your changes - asi allas eliminado una carpeta, actualia el repositorio.
 ```
 
 ## subir al repositorio bitbucker
