@@ -19,6 +19,7 @@ instala de forma gloal
   ```bash
   tareas
   ```
+1. cd name-project
 1. npm install
 1. npm install --save mongoose
 ```bash
@@ -71,6 +72,7 @@ arranca el servidor
 $> npm install -g express
 $> npm install -g express-generator
 $> express --ejs name-project
+$> cd name-project
 $> npm install
 $> npm install --save mongoose
 $> mkdir models
