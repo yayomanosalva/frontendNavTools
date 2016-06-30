@@ -27,6 +27,7 @@ libreria que modela los objetos
 ```
 1. mkdir models
 1. npm install --save-dev pm2
+1. touch pm2.json
 ```bash
 Crear un archivo como pm2.json en la raiz del projecto
 {
