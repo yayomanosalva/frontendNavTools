@@ -21,16 +21,17 @@
    ```bash
   1. git init                                           --->>> Creamos un repositorio en el directorio actual
   2. git clone direccionURL /name.git (nombreProyecto)  --->>> clona un repositorio existente dentro de un directorio
-  3. git add nombreArchivo (.)                          --->>> agraga al repositorio los archivos que le indiquemos
-  4. git commit -m "mensaje"                            --->>> hace cometario
-  5. git commit -a                                      --->>> añade todos los commits
-  6. git rm (archivo)                                   --->>> borra el archivo/Dir del repositorio local
-  7. git mv origen destino                              --->>> mover a nueva ruta
-  8. git status                                         --->>> informe estado actual
-  9. git diff                                           --->>> muestra los cambios/diferencias en local
-  10. git diff - -staged                                --->>> muestra los cambios/diferencias en index
-  11. git stash                                         --->>> cuando se quiere registrar el estado actual del directorio de trabajo y el índice, pero quiere volver a un directorio de trabajo limpio
-  12. pwd                                               --->>> comando linux para ubicacion de directirio
+  3. git clone url/file.git --branch dev --single-branch -->>> clona repositorio de rama expecifica(dev) 
+  4. git add nombreArchivo (.)                          --->>> agraga al repositorio los archivos que le indiquemos
+  5. git commit -m "mensaje"                            --->>> hace cometario
+  6. git commit -a                                      --->>> añade todos los commits
+  7. git rm (archivo)                                   --->>> borra el archivo/Dir del repositorio local
+  8. git mv origen destino                              --->>> mover a nueva ruta
+  9. git status                                         --->>> informe estado actual
+  10. git diff                                           --->>> muestra los cambios/diferencias en local
+  11. git diff - -staged                                --->>> muestra los cambios/diferencias en index
+  12. git stash                                         --->>> cuando se quiere registrar el estado actual del directorio de trabajo y el índice, pero quiere volver a un directorio de trabajo limpio
+  13. pwd                                               --->>> comando linux para ubicacion de directirio
   ```
 
 ## RAMAS
