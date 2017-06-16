@@ -47,7 +47,7 @@
     8- git rm -r directoio_a_borrar            --->>> Borrar Directorio Completo
 ```
 
-## UPDATE RAMA ACTUAL DE TRABAJO (actualiza de origin master o develop)
+## UPDATE RAMA actual de trabajo (actualiza de origin master o develop)
     
 ```bash
     git checkout feature/foo                    --->>> Moverse a la rama de trabajo
@@ -58,19 +58,19 @@
 ## .git log
 
 ```bash
-    1- git log                                           --->>> Muestra la historia d los commits completa con el formato predeterminado
-    2- git log -n 3                                      --->>>los ultimos 3 cambios
-    3- git log --oneline                                 --->>> Resumen en una linea
-    4- git log --stat                                    --->>> Que archivos han cambiado y el numero relativo de lineas añadido o cambiado
-    5- git log --author="jair"                           --->>> Que commits ha realizado ese autor
-    6- git log --decorate                                --->>> Añade los nombres de ramas o etiquetas de los cambios
+    1- git log                                   --->>> Muestra la historia d los commits completa con el formato predeterminado
+    2- git log -n 3                              --->>>los ultimos 3 cambios
+    3- git log --oneline                         --->>> Resumen en una linea
+    4- git log --stat                            --->>> Que archivos han cambiado y el numero relativo de lineas añadido o cambiado
+    5- git log --author="jair"                   --->>> Que commits ha realizado ese autor
+    6- git log --decorate                        --->>> Añade los nombres de ramas o etiquetas de los cambios
 ```
 
 ## actualiza & fusiona
 
 ```bash
-    1- git pull                                          --->>> Para actualizar tu repositorio local al commit más nuevo
-    2- git merge <branch>                                --->>> Para fusionar otra rama a tu rama activa (por ejemplo master)
+    1- git pull                                  --->>> Para actualizar tu repositorio local al commit más nuevo
+    2- git merge <branch>                        --->>> Para fusionar otra rama a tu rama activa (por ejemplo master)
 ```
 
 ## .git ignore
@@ -93,7 +93,7 @@
 ## deleted
 
 ```bash 
-> git add             --->>> updates all your changes - asi allas eliminado una carpeta, actualia el repositorio.
+> git add                                   --->>> updates all your changes - asi allas eliminado una carpeta, actualia el repositorio.
 ```
 
 ## subir al repositorio bitbucker
