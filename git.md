@@ -47,6 +47,14 @@
     8- git rm -r directoio_a_borrar            --->>> Borrar Directorio Completo
 ```
 
+## UPDATE RAMA ACTUAL DE TRABAJO (actualiza de origin master o develop)
+    
+```bash
+    git checkout feature/foo                    --->>> Moverse a la rama de trabajo
+    git pull --all                              --->>> Actualiza la rama actual de rama origin
+    git rebase develop                          --->>> Actualiza rama padre (develop) local
+```
+
 ## .git log
 
 ```bash
