@@ -2,7 +2,7 @@
 ![alt text](https://i2.wp.com/lumox.xyz/wp-content/uploads/2018/07/es6-webpack-react-babel.png?fit=1213%2C231&ssl=1 "Logo webpack-babel")
 #  Webpack 4 & typescript
 
-![alt text](webpack-4.png "Logo webpack-4")
+![alt text](https://webpack.js.org/e0b5805d423a4ec9473ee315250968b2.svg "Logo webpack-4")
 
 #### Installing TypeScript (Via yarn)
 
@@ -70,7 +70,7 @@ yarn init
 ```
 
 ### transpiling Javascript ES6 with Babel
-![alt text](webpack-babel.png "Logo webpack-babel")
+![alt text](https://d33wubrfki0l68.cloudfront.net/7a197cfe44548cc1a3f581152af70a3051e11671/78df8/img/babel.svg "Logo webpack-babel")
 
 babel-core
 babel-loader
@@ -115,7 +115,7 @@ window.iAmJavascriptES6 = iAmJavascriptES6;
 ```
 
 #### setting up webpack 4 with React
-![alt text](react.png "Logo Title Text 1")
+![alt text](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K "Logo Title Text 1")
 
 ##### Install React with:
 ```sh
