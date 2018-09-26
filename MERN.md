@@ -1,28 +1,10 @@
 
 ![alt MERN](https://i2.wp.com/lumox.xyz/wp-content/uploads/2018/07/es6-webpack-react-babel.png?fit=1213%2C231&ssl=1 "Logo webpack-babel")
-#  Webpack 4 & typescript
-
-![GitHub Webpack](https://webpack.js.org/e0b5805d423a4ec9473ee315250968b2.svg "Logo webpack-4" )
-
-
-#### Installing TypeScript (Via yarn)
-
-```sh
- yarn global add typescript
-```
-
-#### Installing Webpack (Via yarn)
-
-```sh
- yarn global add webpack
- yarn add webpack --dev
- yarn add webpack-cli --dev
-```
 
 #### Create new directory
 
 ```sh
-mkdir proyect proyect/src  proyect/src/app proyect/src/app/components && cd proyect && touch src/index.js && touch server.js && touch tsconfig.json && touch webpack.config.js && touch src/app/App.ts && touch src/app/components/hello.tsx
+mkdir proyect_name proyect_name/src  proyect_name/src/app proyect_name/src/app/components && cd proyect_name && touch src/index.js && touch server.js && touch tsconfig.json && touch webpack.config.js && touch src/app/App.ts && touch src/app/components/hello.tsx
 ```
 
 ```sh
@@ -47,6 +29,24 @@ proyect/
 #### yarn init
 ```sh
 yarn init
+```
+#  Webpack 4 & typescript
+
+![GitHub Webpack](https://webpack.js.org/e0b5805d423a4ec9473ee315250968b2.svg "Logo webpack-4" )
+
+
+#### Installing TypeScript (Via yarn)
+
+```sh
+ yarn global add typescript
+```
+
+#### Installing Webpack (Via yarn)
+
+```sh
+ yarn global add webpack
+ yarn add webpack --dev
+ yarn add webpack-cli --dev
 ```
 
 #### Edit package.json
