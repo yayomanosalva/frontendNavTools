@@ -11,9 +11,10 @@
   ```bash
   -->> git config --global user.name "jair manosalva"
   -->> git config --global user.mail yayomanosalva@gmail.com
-  -->> git config --global core.editor sublime          --->>> configuras el editor preferido
+  -->> git config --global core.editor "code --wait"    --->>> configuras el editor preferido
   -->> git config --global -l                           --->>> Muestra las configuraciones de git
   -->> git config --global alias.st status              --->>> puedes cambiar el comando por un alias
+  -->> git config --global -e
   ```
 
 ## Glosario
