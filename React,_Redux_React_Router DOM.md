@@ -1,0 +1,69 @@
+# React, Redux, React Router DOM
+
+
+## React Router			----------------------------------------
+
+```bash
+yarn add react-router-dom
+```
+
+#### App.js
+
+```jsx
+import React from 'react';
+import Header from './components/Header';
+import Productos  from "./components/Productos";
+import NuevoProducto  from "./components/NuevoProducto";
+import EditarProducto  from "./components/EditarProducto";
+
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
+
+function App() {
+  return (
+    <Router>
+      <Header/>
+      <div class="container">
+        <Switch>
+          <Route exact path="/" component={Productos}/>
+          <Route exact path="/productos/nuevo" component={NuevoProducto}/>
+          <Route exact path="/productos/editar/:id" component={EditarProducto}/>
+        </Switch>  
+      </div>
+    </Router>
+  );
+}
+
+export default App;
+```
+
+#### Header.jsx
+
+```jsx
+import React from "react";
+import { Link } from "react-router-dom";
+
+const Header = () => {
+  return (
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary justify-content-between">
+      <div className="container">
+        <h1>
+          <Link to={"/"} className="text-light">
+            CRUD - React, Redux, REST API & Axios
+          </Link>{" "}
+        </h1>
+      </div>
+
+      <Link
+        to={"/productos/nuevo"}
+        className="btn btn-danger nuevo-post d-block d-md-inline-block"
+      >
+        Agregar Producto &#43;
+      </Link>
+    </nav>
+  );
+};
+
+export default Header;
+```
