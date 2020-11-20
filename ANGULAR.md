@@ -45,6 +45,10 @@ ng new spa
 
 ## RUTAS
 
+```bash
+ng new {Project-name} --routing=true
+```
+
 ==================== --- File: app.routing.modules.ts --- ====================
 
 ```typescript
