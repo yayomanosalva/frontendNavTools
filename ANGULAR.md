@@ -57,7 +57,7 @@ const routes: Routes = [
  { path: 'precios', component: PreciosComponent },
  { path: 'compartida', component: CompartidaComponent },
  { path: 'protegida', component: ProtegidaComponent },
- { path: '****', pathMatch: 'full', redirectTo: 'home' },
+ { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
 ```
 
