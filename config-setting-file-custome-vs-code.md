@@ -2,8 +2,8 @@
 ```javascript
 {
     //Material Theme
-    "editor.fontFamily": "Consolas, monospace",
-    "editor.fontSize": 16,
+    "editor.fontFamily": "Fira Code, Consolas, monospace",
+    "editor.fontSize": 14,
     "workbench.startupEditor": "none",
     "editor.wordWrap": "on",
     "explorer.openEditors.visible": 0,
@@ -54,18 +54,18 @@
     },
     "editor.minimap.maxColumn": 90,
     "editor.minimap.enabled": false,
-    "editor.autoIndent": true,
+    "editor.autoIndent":"advanced",
     "editor.rulers": [
         120
     ],
     "java.errors.incompleteClasspath.severity": "ignore",
     "editor.selectionHighlight": false,
     "vsicons.dontShowNewVersionMessage": true,
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "window.restoreWindows": "all",
     "window.restoreFullscreen": true,
     "zenMode.restore": false,
-    "highlightwords.colors": [{
+    "highlightwords.colors": [
+        {
             "light": "#b3d9ff",
             "dark": "cyan"
         },
@@ -124,6 +124,7 @@
     "files.associations": {
         "*.js": "javascriptreact"
     },
-    "terminal.integrated.fontSize": 15
+    "terminal.integrated.fontSize": 15,
+    "editor.defaultFormatter": "vscode.typescript-language-features"
 }
 ```
