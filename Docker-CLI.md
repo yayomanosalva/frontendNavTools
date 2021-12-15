@@ -21,4 +21,7 @@ https://docs.docker.com/engine/reference/commandline/docker/
 | Eliminar contenedor                     | $ docker rm id_contenedor                                                 |
 | Descargar imagen que está en dockerfile | $ docker-compose up -d                                                    |
 | ingresar a terminal de  contenedor      | $ docker-compose exec ubuntu /bin/bash                                    |
-| ver ip docker                           | $ sudo docker inspect id_container                                        |                                                         |
+| ver ip docker                           | $ sudo docker inspect id_container                                        |
+|Compartir container en dockerhub         | $ sudo docker tag nameContainerLocal usernamedockerhub/namecontainer
+|push para compartir                      | $ sudo docker push usernamedockerhub/namecontainer
+                                          | 
