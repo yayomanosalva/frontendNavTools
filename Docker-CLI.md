@@ -20,6 +20,7 @@ https://docs.docker.com/engine/reference/commandline/docker/
 | install python in container             | $ apt-get install python                                                  |
 | Eliminar contenedor                     | $ docker rm id_contenedor                                                 |
 | Descargar imagen que está en dockerfile | $ docker-compose up -d                                                    |
+| Stops containers and removes containers | $ docker-compose down                                                     |
 | ingresar a terminal de  contenedor      | $ docker-compose exec ubuntu /bin/bash                                    |
 | ver ip docker                           | $ sudo docker inspect id_container                                        |
 |Compartir container en dockerhub         | $ sudo docker tag nameContainerLocal usernamedockerhub/namecontainer
