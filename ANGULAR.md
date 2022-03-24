@@ -13,10 +13,10 @@ ng new spa
   ==================== --- components --- ====================
 
   ```bash
-  ng g c components/shared/navbar -is - -skipTests
-  ng g c components/home -is –skipTests
-  ng g c components/about -is –skipTests
-  ng g c components/heroes -is –skipTests
+  ng g c components/shared/navbar -is - --skipTests=true
+  ng g c components/home -is –-skipTests=true
+  ng g c components/about -is --skipTests=true
+  ng g c components/heroes -is --skipTests=true
   ```
 
   ==================== --- generate model class --- ====================
