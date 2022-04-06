@@ -93,6 +93,7 @@ imports: [BrowserModule, AppRoutingModule, FormsModule],
 ```bash
 ng g c components/fileUpload --`module=app.module`
 ```
+## Lazy loading
 #### ==================== --- Lazy loading basics --- ====================
 To lazy load Angular modules, use loadChildren (instead of component) in your AppRoutingModule routes configuration as follows.
 
@@ -152,7 +153,9 @@ const routes: Routes = [
 ng serve
 ```
 
-[link](https://angular.io/guide/lazy-loading-ngmodules#set-up-the-ui)
+[Lazy-loading Page](https://angular.io/guide/lazy-loading-ngmodules#set-up-the-ui) 
+
+## Service
 #### ==================== --- service --- ====================
 
 ```bash
@@ -161,7 +164,9 @@ ng g s services/auth --skipTests
 
 ///////// ng g s services/producto --module=app.module
 
-[link](https://angular.io/api/router/CanActivate)
+[Service Page](https://angular.io/api/router/CanActivate)
+
+![Angular!](https://angular.io/assets/images/logos/angular/logo-nav@2x.png "Angular")
 #### ==================== --- guard --- ====================
 
 ```bash
