@@ -1,5 +1,7 @@
-![Angular!](https://angular.io/assets/images/logos/angular/logo-nav@2x.png "Angular") # SPA ANGULAR
+# SPA ANGULAR
+![Angular!](https://angular.io/assets/images/logos/angular/logo-nav@2x.png "Angular")
 
+## List Commands
 ![img](https://i.stack.imgur.com/WczZ8.png) 
 
 ==================== --- Install new project & structure --- ====================
@@ -12,7 +14,7 @@ ng new spa
 
 - style => scss
 
-  ==================== --- components --- ====================
+==================== --- components --- ====================
 
   ```bash
   ng g c components/shared/navbar --skipTests=true
@@ -21,13 +23,13 @@ ng new spa
   ng g c components/heroes --skipTests=true
   ```
 
-  ==================== --- generate model class --- ====================
+==================== --- generate model class --- ====================
 
   ```bash
   ng generate class hero --type=model
   ```
 
-  ==================== --- Install bootstrap --- ====================
+==================== --- Install bootstrap --- ====================
 
   ```bash
   npm install jquery -–save
@@ -35,8 +37,7 @@ ng new spa
   npm install bootstrap
   npm install bootswatch
   ```
-
-  ==================== --- File: Angular.json --- ====================
+==================== --- File: Angular.json --- ====================
 
 ```html
 "styles": ["src/styles.css","node_modules/bootstrap/dist/css/bootstrap.min.css"],
