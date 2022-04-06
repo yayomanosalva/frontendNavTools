@@ -1,3 +1,4 @@
+![img](https://i.stack.imgur.com/WczZ8.png) 
 # SPA ANGULAR
 
 ==================== --- Install new project & structure --- ====================
@@ -184,12 +185,6 @@ ng g guard guards/auth --skipTest
 ```bash
 ng g i interfaces/img interface ng g i interfaces/producto interface
 ```
-
-
-
-![img](https://i.stack.imgur.com/WczZ8.png)
-
-
 
 # 	================== Login ==================
 
