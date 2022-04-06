@@ -1,5 +1,6 @@
+![Angular!](https://angular.io/assets/images/logos/angular/logo-nav@2x.png "Angular") # SPA ANGULAR
+
 ![img](https://i.stack.imgur.com/WczZ8.png) 
-# SPA ANGULAR
 
 ==================== --- Install new project & structure --- ====================
 
@@ -167,7 +168,7 @@ ng g s services/auth --skipTests
 
 [Service Page](https://angular.io/api/router/CanActivate)
 
-![Angular!](https://angular.io/assets/images/logos/angular/logo-nav@2x.png "Angular")
+
 #### ==================== --- guard --- ====================
 
 ```bash
