@@ -75,7 +75,7 @@ import { FormsModule } from "@angular/forms";
 imports: [BrowserModule, AppRoutingModule, FormsModule],
 ```
 
-#### ==================== --- File: navbar.component.html
+#### ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --- File: navbar.component.html ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
 ```html
 <ul class="navbar-nav mr-auto">
@@ -89,9 +89,70 @@ imports: [BrowserModule, AppRoutingModule, FormsModule],
         <a class="nav-link" routerLink='/protegida'>protegida</a>
     </li>
 </ul>
+```
+```bash
 ng g c components/fileUpload --`module=app.module`
 ```
+#### ==================== --- Lazy loading basics --- ====================
+To lazy load Angular modules, use loadChildren (instead of component) in your AppRoutingModule routes configuration as follows.
 
+### Step-by-step setup
+```bash
+ng new customer-app --routing
+```
+
+```bash
+ng generate module customers --route customers --module app.module
+```
+
+#### ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --- File: src/app/app-routing.module.ts ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+```
+const routes: Routes = [
+  {
+    path: 'customers',
+    loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule)
+  }
+];
+```
+
+### Add another feature module
+```bash
+ng generate module orders --route orders --module app.module
+```
+
+#### ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --- File: src/app/app-routing.module.ts ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+```
+const routes: Routes = [
+  {
+    path: 'customers',
+    loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule)
+  },
+  {
+    path: 'orders',
+    loadChildren: () => import('./orders/orders.module').then(m => m.OrdersModule)
+  }
+];
+```
+
+#### ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --- File: src/app/app.component.html ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+
+```html
+<h1>
+  {{title}}
+</h1>
+
+<button type="button" routerLink="/customers">Customers</button>
+<button type="button" routerLink="/orders">Orders</button>
+<button type="button" routerLink="">Home</button>
+
+<router-outlet></router-outlet>
+```
+
+```bash
+ng serve
+```
+
+[link](https://angular.io/guide/lazy-loading-ngmodules#set-up-the-ui)
 #### ==================== --- service --- ====================
 
 ```bash
@@ -100,6 +161,7 @@ ng g s services/auth --skipTests
 
 ///////// ng g s services/producto --module=app.module
 
+[link](https://angular.io/api/router/CanActivate)
 #### ==================== --- guard --- ====================
 
 ```bash
