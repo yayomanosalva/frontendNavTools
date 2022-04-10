@@ -75,7 +75,19 @@ const routes: Routes = [
 ```typescript
 import { RouterModule } from '@angular/router';
 
-imports: [BrowserModule, AppRoutingModule, RouterModule],
+@NgModule({
+  imports: [
+      BrowserModule,
+      RouterModule
+      FormsModule               
+  ],
+  declarations: [
+      AppComponent,  
+      DashboardComponent      
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
 ```
 
 #### ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --- File: navbar.component.html ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
