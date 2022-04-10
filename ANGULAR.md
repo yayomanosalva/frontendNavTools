@@ -73,9 +73,9 @@ const routes: Routes = [
 #### ==================== --- File: app.module.ts
 
 ```typescript
-import { FormsModule } from "@angular/forms";
+import { RouterModule } from '@angular/router';
 
-imports: [BrowserModule, AppRoutingModule, FormsModule],
+imports: [BrowserModule, AppRoutingModule, RouterModule],
 ```
 
 #### ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --- File: navbar.component.html ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
