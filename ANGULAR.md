@@ -67,7 +67,7 @@ const routes: Routes = [
 #### ==================== --- File: index.html
 
 ```html
-<router-oulet></router-oulet>
+<router-outlet></router-outlet>
 ```
 
 #### ==================== --- File: app.module.ts
