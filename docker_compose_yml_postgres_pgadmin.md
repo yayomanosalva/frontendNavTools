@@ -29,3 +29,8 @@ services:
       - postgres
       
 ```
+### se levanta con el comando
+
+```
+docker-compose up
+```
