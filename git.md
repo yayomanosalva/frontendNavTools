@@ -46,7 +46,9 @@
     6- git checkout -- archivo                 --->>> dos guiones y un espacio en blanco
     7- git branch -m old_branch new_branch     --->>> Renombrar Rama
     8- git rm -r directoio_a_borrar            --->>> Borrar Directorio Completo
-    9- git rm -a                               --->>> List all branches (local and remote)
+    9- git branch                              --->>> To see local branches
+   10- git branch -r                           --->>> To see remote branches
+   11- git branch -a                           --->>> List all branches (local and remote)
 ```
 
 ## UPDATE RAMA actual de trabajo (actualiza de origin master o develop)
