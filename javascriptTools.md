@@ -1,5 +1,6 @@
-//Reduce
+#Reduce
 
+```typescript
 export interface Task {
 	nombre:string,
 	prioridad:string;
@@ -14,12 +15,16 @@ const tareas = [
 			{ nombre: 'Lavar la ropa', prioridad: 'A' },
 			{ nombre: 'ordenar la sala', prioridad: 'C' },
 		];
-const final = tareas.reduce((obj, task: Task) => {
+		const final = tareas.reduce((obj, task: Task) => {
 			console.log({ task });
 			if (!obj[task.prioridad]) {
 				obj[task.prioridad] = [];
 			}
+
 			obj[task.prioridad].push(task.nombre);
 			return obj;
+
 		}, {});
+
 		console.log("object -->> ", {final});
+```
