@@ -109,3 +109,48 @@ y haces git pull. y si quieres borrar la rama arriba.
 > git stash pop                                       --->>> vuelve al estado anterior
 > git stash                                           --->>> continuar sin cambios
 ```
+
+# Paso a paso para configurar tu usuario de GitHub en WSL Ubuntu y poder clonar proyectos privados:
+
+1. **Instalar Git**:
+   Si no tienes Git instalado, abre tu terminal de WSL y ejecuta:
+   ```sh
+   sudo apt update
+   sudo apt install git
+   ```
+
+2. **Configurar tu nombre de usuario y correo electrónico**:
+   Configura tu nombre de usuario y correo electrónico de GitHub:
+   ```sh
+   git config --global user.name "yayomanosalva"
+   git config --global user.email  "yayomanosalva@gmail.com"
+   ```
+
+3. **Generar una clave SSH**:
+   Si no tienes una clave SSH, puedes generar una nueva:
+   ```sh
+   ssh-keygen -t ed25519 -C "yayomanosalva@gmail.com"
+   ```
+   Sigue las instrucciones y guarda la clave en la ubicación predeterminada (`~/.ssh/id_ed25519`).
+
+4. **Agregar la clave SSH a tu agente SSH**:
+   Inicia el agente SSH y agrega tu clave:
+   ```sh
+   eval "$(ssh-agent -s)"
+   ssh-add ~/.ssh/id_ed25519
+   ```
+
+5. **Agregar la clave SSH a tu cuenta de GitHub**:
+   - Copia el contenido de tu clave pública:
+     ```sh
+     cat ~/.ssh/id_ed25519.pub
+     ```
+   - Ve a [GitHub](https://github.com/settings/keys) y agrega una nueva clave SSH. Pega el contenido de tu clave pública en el campo correspondiente.
+
+6. **Clonar un repositorio privado**:
+   Ahora puedes clonar un repositorio privado usando SSH:
+   ```sh
+   git clone git@github.com:usuario/nombre-repositorio.git
+   ```
+[guía completa](https://learn.microsoft.com/es-es/windows/wsl/tutorials/wsl-git) 
+o ver este [video tutorial](https://www.youtube.com/watch?v=nhpm3-M71YI).
